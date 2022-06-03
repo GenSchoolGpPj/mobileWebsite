@@ -1,125 +1,88 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Smartphone</title>
-  <link rel="icon" type="image/x-icon"
+  
+  <head>
+    <title>iPhone STUDIO</title>
+    <link rel="icon" type="image/x-icon"
     href="https://e7.pngegg.com/pngimages/148/496/png-clipart-smartphone-illustration-smartphone-icon-electronics-phone-icons-thumbnail.png">
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Tiro+Devanagari+Marathi&display=swap">
-  <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.css">
-  <script type="text/javascript" src="/fontawesome/js/all.js"></script>
-</head>
-
-<body>
-
-  <div class="container">
-
-    <img class="bg"
-      src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg">
-
+    <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.css">
+    <script type="text/javascript" src="/fontawesome/js/all.js"></script>
+  </head>
+  
+  <body>
     <ul class="navigation">
       <img src="fontawesome/svgs/brands/apple.svg">
-      <li><a href="#">Home</a></li>
+      <li><a href="#top">Home</a></li>
       <li><a href="#">Registration</a></li>
-      <li><a href="#">Contact US</a></li>
-      <li><a href="#">About US</a></li>
+      <li><a href="#aboutUs">About US</a></li>
+      <li><a href="#contactUs">Contact US</a></li>
     </ul>
+    
+  <img id="top" class="bg"
+    src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg">
+  <!-- Wing's work start here -->
+  <header>
+    <h1>Introduction to iPhone STUDIO</h1>
+    <p>The newly created O2O shopping platform, connecting the online and offline services.</p>
+  </header>
 
-    <h1>Introduction Smartphone</h1>
+  <h2><strong>Membership Activity: Apple iPHONE 13 Pro and Pro Max Lucky Draw - Online Registration</strong></h2>
+  <br>
+  <div id="aboutUs" class="about=section">
+    <h2 style="center"><strong>About iPhone STUDIO</strong></h2>
+    <p>iPhone STUDIO offers a full range of Apple products and extensive range of third-party accessories and software
+      in Hong Kong. Otherwise, providing an Apple expertise who can give you a professional advice to satisfy your
+      needs.</p>
+    <h3 style="center"><strong>Our Mission</strong></h3>
+    <p>iPhone STUDIO was established in Hong Kong in 2020 and is the first Apple Premium Reseller in Hong Kong.
+      We are deeply honoured to receive many awards eg. Best APP Performance 2021 and Reseller of the Year 2021.</p>
+  </div>
+  <h3>Register NOW! Please submit the form below!</h3>
+  <p>Registration Period: Now until 27 June (Mon) 23:59</p>
+  <!-- Wing's work end here -->
 
-    <p>A smartphone is a portable device that combines mobile telephone and computing functions into one unit.</p>
 
-    <strong>Smartphone Brand:</strong>
 
-    <ul class="brand">
-      <li><a
-          href="https://www.apple.com/hk/?afid=p238%7CsJE6yYjYc-dc_mtid_18707vxu38484_pcrid_571235834056_pgrid_15185283797_pntwk_g_pchan__pexid__&cid=aos-hk-kwgo-brand--slid---product-">Apple<img
-            src="https://www.svgrepo.com/show/303125/apple-logo.svg" alt="apple logo" height="70" width="70"></a></li>
+  <!-- Wing's work start here , worng layout-->
+  <h2 id="contactUs">Contact Us</h2>
+  <p>Contact Number</p>
+  <p>Hotline: 3500 7164</p>
+  <p>Office Hours</p>
+  <p>Monday to Friday, 9:00 AM - 6:00 PM, (excluding Saturdays, Sundays and public holidays).</p>
+  <p>Address</p>
+  <p>Unit 03, 7/F, Millennium Trade Centre, 56 Kwai Cheong Road, Kwai Chung, NT </p>
 
-      <li><a
-          href="https://www.samsung.com/hk/smartphones/galaxy-s22-ultra/?cid=hk_pd_ppc_google_rainbow_launch_text_hq-launch-sem_none_none_warm_1_target_none_eta_google&gclid=Cj0KCQjw-daUBhCIARIsALbkjSbeDtHsG_JDfcaJ1lR_pZH0_C_LT9NBSFKZLg5C9GxgGbj_tbSp3RUaAltrEALw_wcB&gclsrc=aw.ds">Samsung<img
-            src="https://www.svgrepo.com/show/303265/samsung-logo.svg" alt="samsung logo" height="70" width="70"></a>
-      </li>
+  <form>
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+    <br>
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+    <br>
+    <label for="district">District</label>
+    <select id="district" name="district">
+      <option value="hongkong">Hong Kong</option>
+      <option value="kowloon">Kowloon</option>
+      <option value="newterritories">New Territories</option>
+    </select>
+    <br>
+    <label for="comment">Comment</label>
+    <textarea id="comment" name="comment" placeholder="Write something.." style="height:170px"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
 
-      <li><a href="https://consumer.huawei.com/hk/">Huiwei<img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6AIXHdBGE_A5v3Vh4LlFb5-o3pihSLjdiw&usqp=CAU"
-            alt="huawei logo" height="70" weight="70"></a></li>
+  <!-- Wing's work end here -->
 
-      <li><a
-          href="https://www.mi.com/hk/product/redmi-note-11-pro-5g/?mi_source=Google&mi_channel=Search&mi_campaign=mihk_de_search_redmi-note-11-pro_202204&mi_medium=Prospecting&utm_source=Google&utm_medium=CPC&utm_campaign=redmi-note-11-pro&utm_term=Prospecting&utm_content=opensale&gclid=Cj0KCQjw-daUBhCIARIsALbkjSYMyhy9FMH5qO6cYi1g9gHyX2bQG-YjFgvej2vddiMzJvpZbFKtx-QaAvuQEALw_wcB">Xiaomi<img
-            src="https://www.svgrepo.com/show/303338/xiaomi-logo.svg" img="xiaomi logo" height="70" width="70"></a></li>
+  <span>&copy; iPhone STUDIO</span>
 
-    </ul>
-
-    <table border="2" class="Xtable">
-      <tr>
-        <th>Brand</th>
-        <th>Smartphone model</th>
-        <th>Picture</th>
-        <th>Function</th>
-      </tr>
-      <tr>
-        <td>Apple</td>
-        <td>Iphon 13 Pro Max</td>
-        <td><img
-            src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-13-Pro_Colors_09142021_big.jpg.slideshow-large_2x.jpg"
-            alt="Iphone 13 pro max" width="200" height="200"></td>
-        <td>
-          <ol>
-            <li>Use Face ID with a mask</li>
-            <li>SharePlay: Watch together</li>
-          </ol>
-        </td>
-      </tr>
-      <tr>
-        <td>Samsung</td>
-        <td>Galaxy S22 Ultra</td>
-        <td><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrIPXMNMOXY7bjY5inRRruqISpMFWokRtCUg&usqp=CAU"
-            alt="S22 Ultra" width="200" height="200"></td>
-        <td>
-          <ol>
-            <li>Return of the S Pen</li>
-            <li>Breaking Dim Boundaries with the Strongest Nightography</li>
-          </ol>
-      </tr>
-      <tr>
-        <td>Huawei</td>
-        <td>P50 Pro</td>
-        <td><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_nTSgy1ZkujgaEdZWUIL3pqRSkZouxh5zX_6cG1JBUBQ13D7j1taN6JabTwHXZg8NWoY&usqp=CAU"
-            alt="S22 Ultra" width="200" height="200"></td>
-        <td>
-          <ol>
-            <li>Elegant hardware</li>
-            <li>50 MP True-Chroma Camera </li>
-          </ol>
-        </td>
-      </tr>
-      <tr>
-        <td>Xiaomi</td>
-        <td>12 Pro</td>
-        <td><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGiyLnxwapNUYgf4T2vHMdECrllkczqJP6g&usqp=CAU"
-            alt="12 Pro" width="200" height="200"></td>
-        <td>
-          <ol>
-            <li> HyperCharger solution with 120W adapter</li>
-            <li>Night Mode 2.0 does keep it colorful.</li>
-          </ol>
-        </td>
-      </tr>
-
-    </table>
-
-    <span>&copy; Smartphone</span>
 
   </div>
-  <div>test github 04</div>
 
   <div class="btn">
     <div class="play">
@@ -127,7 +90,10 @@
   </div>
 
   <div class="clip">
-    <iframe id="video" class="video close" width="800" height="600" src="https://www.youtube.com/embed/m43rh-pI0P0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="video" class="video close" width="800" height="600" src="https://www.youtube.com/embed/m43rh-pI0P0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     <div class="closeBtn">Close</div>
   </div>
 
@@ -139,16 +105,15 @@
     btn.onclick = function () {
       btn.classList.add('play')
       video.classList.remove('close')
-      document.getElementById("video").src=document.getElementById("video").src + "?autoplay=1"
+      document.getElementById("video").src = document.getElementById("video").src + "?autoplay=1"
     }
-    closeBtn.onclick = function(){
+    closeBtn.onclick = function () {
       closeBtn.classList.add('close')
       video.classList.add('close')
       btn.classList.add('close')
-      document.getElementById("video").src="";
+      document.getElementById("video").src = "";
     }
   </script>
-
 </body>
 
 </html>
