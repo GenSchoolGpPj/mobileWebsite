@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Tiro+Devanagari+Marathi&display=swap" >
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Tiro+Devanagari+Marathi&display=swap">
   <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.css">
   <script type="text/javascript" src="/fontawesome/js/all.js"></script>
 </head>
@@ -19,6 +20,14 @@
 
     <img class="bg"
       src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg">
+
+    <ul class="navigation">
+      <img src="fontawesome/svgs/brands/apple.svg">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Registration</a></li>
+      <li><a href="#">Contact US</a></li>
+      <li><a href="#">About US</a></li>
+    </ul>
 
     <h1>Introduction Smartphone</h1>
 
@@ -110,7 +119,36 @@
     <span>&copy; Smartphone</span>
 
   </div>
-  <div>test github 02</div>
+  <div>test github 04</div>
+
+  <div class="btn">
+    <div class="play">
+    </div>
+  </div>
+
+  <div class="clip">
+    <iframe id="video" class="video close" width="800" height="600" src="https://www.youtube.com/embed/m43rh-pI0P0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="closeBtn">Close</div>
+  </div>
+
+  <script>
+    let btn = document.querySelector('.btn');
+    let closeBtn = document.querySelector('.closeBtn');
+    let video = document.querySelector('.video');
+
+    btn.onclick = function () {
+      btn.classList.add('play')
+      video.classList.remove('close')
+      document.getElementById("video").src=document.getElementById("video").src + "?autoplay=1"
+    }
+    closeBtn.onclick = function(){
+      closeBtn.classList.add('close')
+      video.classList.add('close')
+      btn.classList.add('close')
+      document.getElementById("video").src="";
+    }
+  </script>
+
 </body>
 
 </html>
