@@ -17,6 +17,7 @@ body {
     text-shadow: 0 0 10px rgb(0, 255, 132),
         0 0 20px rgb(0, 255, 132);
     text-align: center;
+
 }
 
 .bg {
@@ -126,7 +127,7 @@ table tr {
     text-decoration: none;
     display: flex;
     align-items: center;
-    /* transition: .1s ease-in-out; */
+    /* transition: .1s ease-in-ot; */
 }
 
 .brand li a:hover {
@@ -143,12 +144,13 @@ span {
 
 ul.navigation {
     position: fixed;
-    margin-top: -6em !important;
+    margin-top: -6.3em !important;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    width: calc(100% - 1em);
+    width: 100%;
     background-color: darkgray;
+    margin-left: -0.5em;
 }
 
 ul.navigation li {
