@@ -1,13 +1,8 @@
-td {
-    border: 10x black solid;
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Courier New', monospace;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     text-decoration: none;
     list-style: none;
     color: #fff;
@@ -20,69 +15,91 @@ body {
     text-align: center;
 }
 
-.bg {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    z-index: -2;
-    opacity: 0.4;
-}
-
-nav{
-    background: rgb(42, 42, 44);
+nav {
+    background: #333;
     height: 80px;
     width: 100%;
     text-shadow: none;
     font-weight: bold;
+    overflow: hidden;
 }
 
-nav label{
+nav label {
     font-size: 35px;
     line-height: 80px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     float: left;
 }
 
-nav label img{
+nav label img {
     width: 7%;
 }
 
-nav ul{
+nav .nav_links {
     float: right;
     margin-right: 20px;
 }
 
-nav ul li{
+nav .nav_links a {
     display: inline-block;
-    line-height: 80px;
+    line-height: 50px;
     margin: 0 15px;
-}
-
-nav ul li a{
+    padding: 14px 16px;
     font-size: 17px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .2s ease-in-out;
+}
+
+nav .nav_links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav .nav_links a.active {
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.container {
+    padding-top: 60px;
+}
+
+#bg {
+    background: url("https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg") no-repeat 100% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .3;
+    width: 100%;
+    height: 420px;
+    position: absolute;
+}
+
+main {
+    /* background: url("https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg") no-repeat 100% 100%; */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
-    margin: 100px;
+    padding: 50px;
     font-size: 50px;
     letter-spacing: .1em;
 }
 
+h2 {
+    padding: 50px;
+}
+
 p {
-    margin: 10px;
-    padding: 100px;
+    margin: 15px;
+    padding: 10px;
     font-size: 20px;
-}
-
-table {
-    box-shadow: 0 0 5px rgb(0, 255, 132),
-        0 0 10px rgb(0, 255, 132);
-}
-
-table tr {
-    box-shadow: 0 0 5px rgb(0, 255, 132),
-        0 0 10px rgb(0, 255, 132);
 }
 
 .box {
@@ -149,36 +166,54 @@ table tr {
     }
 }
 
-.Xtable {
-    border-color: white;
+.part {
+    margin-top: 100px;
 }
 
-.brand {
-    display: flex;
+#contactUs ul li {
+    margin: 10px;
 }
 
-.brand li a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    /* transition: .1s ease-in-ot; */
+.form-section {
+    margin: 10px;
+    font-size: 17px;
 }
 
-.brand li a:hover {
-    text-shadow: 0 0 10px rgb(0, 255, 132),
-        0 0 30px rgb(0, 255, 132),
-        0 0 60px rgb(0, 255, 132);
+input {
+    background: #222;
+    border: none;
+    margin: 8px;
+    font-size: 15px;
+}
+
+select {
+    border: none;
+    background: #222;
+    font-size: 14px;
+}
+
+#comment {
+    background: #222;
+    border: none;
+    font-size: 17px;
+}
+
+#submit-btn {
+    margin: 20px;
+    padding: 10px 30px;
     font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .2s ease-in-out;
+}
+
+#submit-btn:hover {
+    background: #ddd;
+    color: black;
 }
 
 span {
     float: right;
     font-family: 'Verdana', monospace;
-}
-
-.submit-btn{
-    
 }
 
 .btn {
