@@ -17,7 +17,7 @@
 <body>
 
   <header>
-    <nav>
+    <nav id="navbar">
       <label class="logo">
         <img src="fontawesome/svgs/brands/apple.svg" alt="logo">
         Iphone STUDIO
@@ -67,6 +67,7 @@
     </ul>
   </section>
 
+  <br>
   <section id="google-map" class="part">
     <div id="map"></div>
   </section>
@@ -101,6 +102,10 @@
       <input type="submit" value="Submit" id="submit-btn">
     </form>
   </section>
+
+  <div class="box">
+    <div class="cube"></div>
+  </div>
 
   <!-- Wing's work end here -->
 
@@ -137,6 +142,19 @@
       video.classList.add('close');
       btn.classList.add('close');
       document.getElementById("video").src = "";
+    }
+
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
     }
 
     // Bruce's work start here
