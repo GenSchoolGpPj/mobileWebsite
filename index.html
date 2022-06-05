@@ -3,6 +3,7 @@
 
 <head>
   <title>iPhone STUDIO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon"
     href="https://e7.pngegg.com/pngimages/148/496/png-clipart-smartphone-illustration-smartphone-icon-electronics-phone-icons-thumbnail.png">
   <link rel="stylesheet" href="./style.css" />
@@ -16,6 +17,105 @@
 
 <body>
 
+  <header>
+    <nav>
+      <label class="logo">
+        <img src="fontawesome/svgs/brands/apple.svg" alt="logo">
+        Iphone STUDIO
+      </label>
+      <div class="nav_links">
+        <a class="active" href="#">Home</a>
+        <a href="#aboutUs">About US</a>
+        <a href="#contactUs">Contact US</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <main class="part">
+      <div id="bg"></div>
+      <h1>Introduction</h1>
+      <p>The newly created O2O shopping platform, connecting the online and offline services.</p>
+      <h2>Membership Activity: Apple iPHONE 13 Pro and Pro Max Lucky Draw - Online Registration</h2>
+    </main>
+
+    <section id="aboutUs" class="part">
+      <h2>About iPhone STUDIO</h2>
+      <p>iPhone STUDIO offers a full range of Apple products and extensive range of third-party accessories and software
+        in Hong Kong. Otherwise, providing an Apple expertise who can give you a professional advice to satisfy your
+        needs.</p>
+      <h3>Our Mission</h3>
+      <p>iPhone STUDIO was established in Hong Kong in 2020 and is the first Apple Premium Reseller in Hong Kong.
+        We are deeply honoured to receive many awards eg. Best APP Performance 2021 and Reseller of the Year 2021.</p>
+    </section>
+
+    <h3>Register NOW! Please submit the form below!</h3>
+    <p>Registration Period: Now until 27 June (Mon) 23:59</p>
+    <!-- Wing's work end here -->
+
+    <!-- Wing's work start here , worng layout-->
+    <section id="contactUs" class="part">
+      <h2>Contact Us</h2>
+      <ul>
+        <li>Contact Number</li>
+        <li>Hotline: 3500 7164</li>
+        <li>Office Hours</li>
+        <li>Monday to Friday, 9:00 AM - 6:00 PM, (excluding Saturdays, Sundays and public holidays).</li>
+        <li>Address</li>
+        <li>Unit 03, 7/F, Millennium Trade Centre, 56 Kwai Cheong Road, Kwai Chung, NT</li>
+      </ul>
+
+      <form>
+        <section class="form-section">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+        </section>
+
+        <section class="form-section">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+        </section>
+
+        <section class="form-section">
+          <label for="district">District</label>
+          <select id="district" name="district">
+            <option value="hongkong">Hong Kong</option>
+            <option value="kowloon">Kowloon</option>
+            <option value="newterritories">New Territories</option>
+          </select>
+        </section>
+
+        <section class="form-section">
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" placeholder="Write something.." style="height:170px" cols="70px"
+            rows="40px"></textarea>
+        </section>
+
+        <input type="submit" value="Submit" id="submit-btn">
+      </form>
+    </section>
+
+    <!-- Wing's work end here -->
+
+    <span>&copy; iPhone STUDIO</span>
+
+
+  </div>
+
+  <div class="btn">
+    <div class="play">
+    </div>
+  </div>
+
+  <div class="clip">
+    <iframe id="video" class="video close" width="800" height="600" src="https://www.youtube.com/embed/m43rh-pI0P0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <div class="closeBtn">Close</div>
+  </div>
+  </div>
     <img class="bg"
       src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg">
       <!-- Wing's work start here -->
@@ -74,6 +174,19 @@
     <span>&copy; iPhone STUDIO</span>
 
 
+    btn.onclick = function () {
+      btn.classList.add('play')
+      video.classList.remove('close')
+      document.getElementById("video").src = document.getElementById("video").src + "?autoplay=1"
+    }
+
+    closeBtn.onclick = function () {
+      closeBtn.classList.add('close')
+      video.classList.add('close')
+      btn.classList.add('close')
+      document.getElementById("video").src = "";
+    }
+  </script>
 </body>
 
 </html>
