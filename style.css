@@ -83,7 +83,7 @@ nav .nav_links a.active {
     background: url("https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg") no-repeat 100% 50%;
     background-size: cover;
     background-attachment: fixed;
-    height: 450px;
+    height: 500px;
 }
 
 #banner-2 {
@@ -123,6 +123,7 @@ p {
 }
 
 .box {
+    z-index: -1;
     display: flex;
     justify-content: flex-end;
     padding-right: 30%;
@@ -250,6 +251,7 @@ span {
     background-color: black;
     box-shadow: 0 0 0 150vh black;
     transform: translateX(+50%) translateY(-50%);
+    cursor: pointer;
 }
 
 .btn .play {
@@ -262,6 +264,11 @@ span {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 30px 0 gray;
+    transition: .2s ease-in-out;
+}
+
+.btn .play:hover {
+    box-shadow: 0 0 30px rgb(0, 255, 132);
 }
 
 .btn .play::before {
@@ -297,7 +304,9 @@ span {
     position: fixed;
     top: 50%;
     right: 50%;
-    transform: translateX(+50%) translateY(320px)
+    transform: translateX(+50%) translateY(320px);
+    font-size: 20px;
+    transition: .2s ease-in-out;
 }
 
 .closeBtn:hover {
