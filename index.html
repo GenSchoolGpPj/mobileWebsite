@@ -3,7 +3,6 @@
 
 <head>
   <title>iPhone STUDIO</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon"
     href="https://e7.pngegg.com/pngimages/148/496/png-clipart-smartphone-illustration-smartphone-icon-electronics-phone-icons-thumbnail.png">
   <link rel="stylesheet" href="./style.css" />
@@ -31,74 +30,80 @@
     </nav>
   </header>
 
-  <div class="container">
+  <!-- Wing's work start here -->
+  <main id="introduction" class="part">
+    <div id="banner-1" class="banner"></div>
+    <h1>Introduction to iPhone STUDIO</h1>
+    <p>The newly created O2O shopping platform, connecting the online and offline services.</p>
+    <h2>Membership Activity: Apple iPHONE 13 Pro and Pro Max Lucky Draw - Online Registration</h2>
+  </main>
 
-    <main class="part">
-      <div id="bg"></div>
-      <h1>Introduction</h1>
-      <p>The newly created O2O shopping platform, connecting the online and offline services.</p>
-      <h2>Membership Activity: Apple iPHONE 13 Pro and Pro Max Lucky Draw - Online Registration</h2>
-    </main>
-
-    <section id="aboutUs" class="part">
-      <h2>About iPhone STUDIO</h2>
-      <p>iPhone STUDIO offers a full range of Apple products and extensive range of third-party accessories and software
-        in Hong Kong. Otherwise, providing an Apple expertise who can give you a professional advice to satisfy your
-        needs.</p>
-      <h3>Our Mission</h3>
-      <p>iPhone STUDIO was established in Hong Kong in 2020 and is the first Apple Premium Reseller in Hong Kong.
-        We are deeply honoured to receive many awards eg. Best APP Performance 2021 and Reseller of the Year 2021.</p>
-    </section>
-
+  <section id="aboutUs" class="part">
+    <div id="banner-2" class="banner"></div>
+    <h2>About iPhone STUDIO</h2>
+    <p>iPhone STUDIO offers a full range of Apple products and extensive range of third-party accessories and software
+      in Hong Kong. Otherwise, providing an Apple expertise who can give you a professional advice to satisfy your
+      needs.</p>
+    <h3>Our Mission</h3>
+    <p>iPhone STUDIO was established in Hong Kong in 2020 and is the first Apple Premium Reseller in Hong Kong.
+      We are deeply honoured to receive many awards eg. Best APP Performance 2021 and Reseller of the Year 2021.</p>
     <h3>Register NOW! Please submit the form below!</h3>
     <p>Registration Period: Now until 27 June (Mon) 23:59</p>
     <!-- Wing's work end here -->
+  </section>
 
-    <!-- Wing's work start here , worng layout-->
-    <section id="contactUs" class="part">
-      <h2>Contact Us</h2>
-      <ul>
-        <li>Contact Number</li>
-        <li>Hotline: 3500 7164</li>
-        <li>Office Hours</li>
-        <li>Monday to Friday, 9:00 AM - 6:00 PM, (excluding Saturdays, Sundays and public holidays).</li>
-        <li>Address</li>
-        <li>Unit 03, 7/F, Millennium Trade Centre, 56 Kwai Cheong Road, Kwai Chung, NT</li>
-      </ul>
+  <!-- Wing's work start here , worng layout-->
+  <section id="contactUs" class="part">
+    <div id="banner-3" class="banner"></div>
+    <h2>Contact Us</h2>
+    <ul>
+      <li>Contact Number</li>
+      <li>Hotline: 3500 7164</li>
+      <li>Office Hours</li>
+      <li>Monday to Friday, 9:00 AM - 6:00 PM, (excluding Saturdays, Sundays and public holidays)</li>
+      <li>Address</li>
+      <li>Unit 03, 7/F, Millennium Trade Centre, 56 Kwai Cheong Road, Kwai Chung, NT </li>
+    </ul>
+  </section>
 
-      <form>
-        <section class="form-section">
-          <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" placeholder="Your name..">
-        </section>
+  <section id="google-map" class="part">
+    <div id="map"></div>
+  </section>
 
-        <section class="form-section">
-          <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
-        </section>
+  <section id="form" class="part">
+    <form>
+      <section class="form-section">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+      </section>
 
-        <section class="form-section">
-          <label for="district">District</label>
-          <select id="district" name="district">
-            <option value="hongkong">Hong Kong</option>
-            <option value="kowloon">Kowloon</option>
-            <option value="newterritories">New Territories</option>
-          </select>
-        </section>
+      <section class="form-section">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+      </section>
 
-        <section class="form-section">
-          <label for="comment">Comment</label>
-          <textarea id="comment" name="comment" placeholder="Write something.." style="height:170px" cols="70px"
-            rows="40px"></textarea>
-        </section>
+      <section class="form-section">
+        <label for="district">District</label>
+        <select id="district" name="district">
+          <option value="hongkong">Hong Kong</option>
+          <option value="kowloon">Kowloon</option>
+          <option value="newterritories">New Territories</option>
+        </select>
+      </section>
 
-        <input type="submit" value="Submit" id="submit-btn">
-      </form>
-    </section>
+      <section class="form-section">
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" placeholder="Write something.." style="height:170px" cols="50"
+          rows="30"></textarea>
+      </section>
 
-    <!-- Wing's work end here -->
+      <input type="submit" value="Submit" id="submit-btn">
+    </form>
+  </section>
 
-    <span>&copy; iPhone STUDIO</span>
+  <!-- Wing's work end here -->
+
+  <span>&copy; iPhone STUDIO</span>
 
 
   </div>
@@ -115,78 +120,47 @@
       allowfullscreen></iframe>
     <div class="closeBtn">Close</div>
   </div>
-  </div>
-    <img class="bg"
-      src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?cs=srgb&dl=pexels-tyler-lastovich-699122.jpg&fm=jpg">
-      <!-- Wing's work start here -->
-<header>
-    <h1>Introduction to iPhone STUDIO</h1>
-    <p>The newly created O2O shopping platform, connecting the online and offline services.</p>
-</header>
-    
-    <h2><strong>Membership Activity:  Apple iPHONE 13 Pro and Pro Max Lucky Draw - Online Registration</strong></h2>
-    <br>
-<div class="about=section">
-<h2 style="center"><strong>About iPhone STUDIO</strong></h2>
-<p>iPhone STUDIO offers a full range of Apple products and extensive range of third-party accessories and software
-   in Hong Kong. Otherwise, providing an Apple expertise who can give you a professional advice to satisfy your needs.</p>
-   <h3 style="center"><strong>Our Mission</strong></h3>  
-<p>iPhone STUDIO was established in Hong Kong in 2020 and is the first Apple Premium Reseller in Hong Kong.
-   We are deeply honoured to receive many awards eg. Best APP Performance 2021 and Reseller of the Year 2021.</p>
-</div>
-<h3>Register NOW! Please submit the form below!</h3>
-<p>Registration Period: Now until 27 June (Mon) 23:59</p>   
-<!-- Wing's work end here -->
-    
 
-
-<!-- Wing's work start here , worng layout-->
-<h2>Contact Us</h2>
-<p>Contact Number</p>
-<p>Hotline: 3500 7164</p>
-<p>Office Hours</p>
-<p>Monday to Friday, 9:00 AM - 6:00 PM, (excluding Saturdays, Sundays and public holidays).</p>
-<p>Address</p>
-<p>Unit 03, 7/F, Millennium Trade Centre, 56 Kwai Cheong Road, Kwai Chung, NT </p>
-
-  <form>
-    <label for="firstname">First Name</label>
-    <input type="text" id="firstname" name="firstname" placeholder="Your name.." class="text" class="textbox">
-    <br>
-    <label for="lastname">Last Name</label>
-    <input type="text" id="lastname" name="lastname" placeholder="Your last name.." class="text" class="textbox">
-    <br>
-    <label for="district">District</label>
-    <select id="district" name="district" class="text" class="subject" class="textbox">
-      <option value="hongkong">Hong Kong</option>
-      <option value="kowloon">Kowloon</option>
-      <option value="newterritories">New Territories</option>
-    </select>
-    <br>
-    <label for="comment">Comment</label>
-    <textarea id="comment" name="comment" placeholder="Write something.." class="textarea" class="textbox"></textarea>
-    <br>
-    <input type="submit" value="Submit">
-  </form>
-
-<!-- Wing's work end here -->
-  
-    <span>&copy; iPhone STUDIO</span>
-
+  <script>
+    let btn = document.querySelector('.btn');
+    let closeBtn = document.querySelector('.closeBtn');
+    let video = document.querySelector('.video');
 
     btn.onclick = function () {
-      btn.classList.add('play')
-      video.classList.remove('close')
-      document.getElementById("video").src = document.getElementById("video").src + "?autoplay=1"
+      btn.classList.add('play');
+      video.classList.remove('close');
+      document.getElementById("video").src = document.getElementById("video").src + "?autoplay=1";
     }
 
     closeBtn.onclick = function () {
-      closeBtn.classList.add('close')
-      video.classList.add('close')
-      btn.classList.add('close')
+      closeBtn.classList.add('close');
+      video.classList.add('close');
+      btn.classList.add('close');
       document.getElementById("video").src = "";
     }
+
+    // Bruce's work start here
+    function initMap() {
+      // map option
+      var options = {
+        zoom: 16,
+        center: { lat: 22.362711, lng: 114.137216 }
+      }
+
+      // new map
+      var map = new google.maps.Map(document.getElementById('map'), options)
+
+      // add marker
+      var marker = new google.maps.Marker({
+        position: { lat: 22.363480072928468, lng: 114.13254486845052 },  // GeneratonHK Position
+        map: map
+      })
+    }
   </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPpXF240_QB6nvi83MhjK4WVVKJ2d--is&callback=initMap"></script>
+  <!-- Bruce's work end here -->
 </body>
 
 </html>
