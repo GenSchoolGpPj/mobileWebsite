@@ -22,6 +22,7 @@ nav {
     text-shadow: none;
     font-weight: bold;
     overflow: hidden;
+    z-index: 2;
 }
 
 nav label {
@@ -75,6 +76,7 @@ nav .nav_links a.active {
     opacity: .3;
     position: absolute;
     left: 0;
+    z-index: -2;
 }
 
 #banner-1 {
@@ -88,14 +90,14 @@ nav .nav_links a.active {
     background: url("https://images.pexels.com/photos/914931/pexels-photo-914931.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-914931.jpg&fm=jpg")no-repeat 100% 50%;
     background-size: cover;
     background-attachment: fixed;
-    height: 650px;
+    height: 750px;
 }
 
 #banner-3 {
     background: url("https://images.pexels.com/photos/804065/pexels-photo-804065.jpeg?cs=srgb&dl=pexels-hassan-ouajbir-804065.jpg&fm=jpg")no-repeat 100% 50%;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
 }
 
 h1 {
@@ -105,7 +107,8 @@ h1 {
 }
 
 h2 {
-    padding: 50px;
+    padding-top: 130px;
+    padding-bottom: 50px;
     font-size: 30px;
 }
 
@@ -122,10 +125,10 @@ p {
 .box {
     display: flex;
     justify-content: flex-end;
-    margin-top: 100px;
     padding-right: 30%;
     width: calc(100% + 170px);
-
+    position: absolute;
+    top: 3050px;
     /* Reflection Effect */
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, .25));
     animation: animateSurface 1s ease-in-out infinite;
@@ -183,8 +186,13 @@ p {
     }
 }
 
+form {
+    text-align: left;
+    margin-left: 50px;
+}
+
 .part {
-    margin-top: 100px;
+    margin-top: 180px;
 }
 
 #contactUs ul li {
@@ -300,28 +308,14 @@ span {
     font-weight: bold;
 }
 
-.textarea {
-    height: 170px;
-}
-
-.text {
-    color: black;
-}
-
-form * {
-    text-align: center;
-}
-
-.subject {
-    color: white;
-}
-
-.textbox {
-    color: black;
-}
-
 #map {
     height: 500px;
     width: 70%;
     margin-left: 15%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
