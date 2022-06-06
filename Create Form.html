@@ -139,65 +139,6 @@
     table {
       box-shadow: 0 0 50px rgb(0, 255, 132),
         0 0 50px rgb(0, 255, 132);
-
-    }
-
-
-
-    .box {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 100px;
-      padding-right: 30%;
-      width: calc(100% + 170px);
-
-      /* Reflection Effect */
-      -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, .25));
-      animation: animateSurface 1s ease-in-out infinite;
-    }
-
-
-
-    .box .cube {
-      width: 200px;
-      height: 200px;
-      background-color: rgb(0, 255, 132);
-      box-shadow: 0 0 5px rgb(0, 255, 132),
-        0 0 25px rgb(0, 255, 132),
-        0 0 50px rgb(0, 255, 132),
-        0 0 100px rgb(0, 255, 132),
-        0 0 200px rgb(0, 255, 132),
-        0 0 300px rgb(0, 255, 132);
-
-      transform-origin: bottom right;
-      animation: rotateAnimate 1s ease-in-out infinite;
-    }
-
-    @keyframes rotateAnimate {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      60% {
-        transform: rotate(90deg);
-      }
-
-      65% {
-        transform: rotate(85deg);
-      }
-
-      70% {
-        transform: rotate(90deg);
-      }
-
-      75% {
-        transform: rotate(87.5deg);
-      }
-
-      80%,
-      100% {
-        transform: rotate(90deg);
-      }
     }
 
     .Xtable {
@@ -239,6 +180,14 @@
     .popup .show {
       visibility: visible;
     }
+
+    .submit {
+      cursor: pointer;
+    }
+
+    #draw {
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -258,7 +207,10 @@
         <form action="Admin.php">
           <input type="text" id="username" name="username" placeholder="Username" required>
           <div class="tab"></div>
-          <input type="text" id="password" name="password" placeholder="Password" required>
+          <input type="password" id="password" name="password" placeholder="Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z]).{8,}"
+            title="must contain at least eight characters, at least one number and both lower and uppercase letters and special characters."
+            minlength="8" maxlength="12" required>
           <div class="tab"></div>
           <input type="submit" value="Login" class="submit" onclick="location.href='#'">
         </form>
@@ -281,9 +233,12 @@
           <div class="tab"></div>
           <input type="text" id="username2" name="username" placeholder="Username" required>
           <div class="tab"></div>
-          <input type="text" id="password2" name="password" placeholder="Password" required>
+          <input type="password" id="password2" name="password" placeholder="Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z]).{8,}"
+            title="must contain at least eight characters, at least one number and both lower and uppercase letters and special characters."
+            minlength="8" maxlength="12" required>
           <div class="tab"></div>
-          <input type="text" id="comfirm_password" name="comfirm_password" placeholder="Repeat Password" required>
+          <input type="password" id="comfirm_password" name="comfirm_password" placeholder="Repeat Password" required>
           <div class="tab"></div>
           <input type="submit" value="Sign Up" class="submit">
         </form>
@@ -328,7 +283,7 @@
     <tr>
       <td>
         <h2> please touch or click the draw button</h2>
-        <input type="submit" name="Iphone 13" value="Draw">
+        <input type="submit" name="Iphone 13" value="Draw" id="draw">
       </td>
     </tr>
   </center>
