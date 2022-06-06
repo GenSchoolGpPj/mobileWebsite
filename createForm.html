@@ -34,8 +34,6 @@
 
     }
 
-    h5:hover {}
-
     #container1,
     #container2 {
       /* margin: 50px; */
@@ -72,8 +70,6 @@
       border-radius: 5px;
       border: 0px;
     }
-
-    .submit:hover {}
 
     #container2 {
       visibility: hidden;
@@ -113,7 +109,6 @@
       color: white;
       text-shadow: 0 0 10px rgb(0, 255, 132), 0 0 20px rgb(0, 255, 132);
       text-align: center;
-
     }
 
     .bg {
@@ -183,10 +178,31 @@
 
     .submit {
       cursor: pointer;
+      width: 100px;
+      transition: .2s ease-in-out;
+    }
+
+    .submit:hover {
+      background: #999;
+      width: 140px;
+    }
+
+    #signup-btn {
+      cursor: pointer;
     }
 
     #draw {
       cursor: pointer;
+      transition: .2s ease-in-out;
+      width: 100px;
+      border: none;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+
+    #draw:hover {
+      background: #999;
+      width: 140px;
     }
   </style>
 </head>
@@ -205,7 +221,8 @@
         <h6>Please Login</h6>
 
         <form action="Admin.php">
-          <input type="text" id="username" name="username" placeholder="Username" required>
+          <input type="text" id="username" name="username" placeholder="Username" pattern=".{3,}"
+            title="3 characters minimum" required>
           <div class="tab"></div>
           <input type="password" id="password" name="password" placeholder="Password"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z]).{8,}"
@@ -215,7 +232,7 @@
           <input type="submit" value="Login" class="submit" onclick="location.href='#'">
         </form>
 
-        <h5 onclick="show_hide()">Sign Up</h5>
+        <h5 onclick="show_hide()" id="signup-btn">Sign Up</h5>
 
       </div><!-- login end-->
     </div><!-- container1 end-->
@@ -229,9 +246,11 @@
         <h6>Please Sign Up</h6>
 
         <form action="Admin.php">
-          <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name" pattern=".{5,}"
+            title="5 characters minimum" required>
           <div class="tab"></div>
-          <input type="text" id="username2" name="username" placeholder="Username" required>
+          <input type="text" id="username2" name="username" placeholder="Username" pattern=".{3,}"
+            title="3 characters minimum" required>
           <div class="tab"></div>
           <input type="password" id="password2" name="password" placeholder="Password"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z]).{8,}"
