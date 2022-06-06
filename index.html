@@ -70,9 +70,12 @@
 
   <br>
   <section id="google-map" class="part">
-    <div id="map"></div>
+    <div id="map">
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="800" id="gmap_canvas" src="https://maps.google.com/maps?q=Millennium%20Trade%20Centre&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+    </div>
   </section>
-
+  
+  
   <section id="form" class="part">
     <form>
       <section class="form-section">
@@ -159,22 +162,22 @@
     }
 
     // Bruce's work start here
-    function initMap() {
-      // map option
-      var options = {
-        zoom: 16,
-        center: { lat: 22.362711, lng: 114.137216 }
-      }
+    // function initMap() {
+    //   // map option
+    //   var options = {
+    //     zoom: 16,
+    //     center: { lat: 22.362711, lng: 114.137216 }
+    //   }
 
-      // new map
-      var map = new google.maps.Map(document.getElementById('map'), options)
+    //   // new map
+    //   var map = new google.maps.Map(document.getElementById('map'), options)
 
-      // add marker
-      var marker = new google.maps.Marker({
-        position: { lat: 22.363480072928468, lng: 114.13254486845052 },  // GeneratonHK Position
-        map: map
-      })
-    }
+    //   // add marker
+    //   var marker = new google.maps.Marker({
+    //     position: { lat: 22.363480072928468, lng: 114.13254486845052 },  // GeneratonHK Position
+    //     map: map
+    //   })
+    // }
   </script>
 
   <script async defer
