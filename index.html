@@ -75,30 +75,24 @@
 
   <section id="form" class="part">
     <form>
-      <section class="form-section">
+      <div class="grid">
         <label for="firstname">First Name</label>
         <input type="text" id="firstname" name="firstname" placeholder="Your name..">
-      </section>
-
-      <section class="form-section">
         <label for="lastname">Last Name</label>
         <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
-      </section>
-
-      <section class="form-section">
         <label for="district">District</label>
         <select id="district" name="district">
           <option value="hongkong">Hong Kong</option>
           <option value="kowloon">Kowloon</option>
           <option value="newterritories">New Territories</option>
         </select>
-      </section>
-
-      <section class="form-section">
         <label for="comment">Comment</label>
         <textarea id="comment" name="comment" placeholder="Write something.." style="height:170px" cols="50"
           rows="30"></textarea>
-      </section>
+        <input type="submit" value="Submit" id="submit-btn">
+      </div>
+    </form>
+  </section>
 
       <input type="submit" value="Submit" id="submit-btn">
     </form>

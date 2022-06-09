@@ -328,3 +328,25 @@ span {
     top: 0;
     width: 100%;
 }
+
+
+.grid {
+    display: grid;
+    /* border: 2px blue solid;ß */
+    height: 350px;
+    width: 500px;
+    grid-template: repeat(3, 1fr) 2fr 1fr / 1fr 2fr;
+}
+
+.grid label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid input,
+.grid select,
+.grid textarea{
+    text-align: center;
+    margin: 5px;
+}
