@@ -310,9 +310,10 @@ span {
 }
 
 #map {
-    height: 500px;
-    width: 70%;
-    margin-left: 15%;
+    position: relative;
+    left: 30%;
+    z-index: 1;
+    visibility: hidden;
 }
 
 .sticky {
