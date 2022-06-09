@@ -34,6 +34,8 @@
 
     }
 
+    h5:hover {}
+
     #container1,
     #container2 {
       /* margin: 50px; */
@@ -70,6 +72,8 @@
       border-radius: 5px;
       border: 0px;
     }
+
+    .submit:hover {}
 
     #container2 {
       visibility: hidden;
@@ -109,6 +113,7 @@
       color: white;
       text-shadow: 0 0 10px rgb(0, 255, 132), 0 0 20px rgb(0, 255, 132);
       text-align: center;
+
     }
 
     .bg {
@@ -134,6 +139,65 @@
     table {
       box-shadow: 0 0 50px rgb(0, 255, 132),
         0 0 50px rgb(0, 255, 132);
+
+    }
+
+
+
+    .box {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 100px;
+      padding-right: 30%;
+      width: calc(100% + 170px);
+
+      /* Reflection Effect */
+      -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, .25));
+      animation: animateSurface 1s ease-in-out infinite;
+    }
+
+
+
+    .box .cube {
+      width: 200px;
+      height: 200px;
+      background-color: rgb(0, 255, 132);
+      box-shadow: 0 0 5px rgb(0, 255, 132),
+        0 0 25px rgb(0, 255, 132),
+        0 0 50px rgb(0, 255, 132),
+        0 0 100px rgb(0, 255, 132),
+        0 0 200px rgb(0, 255, 132),
+        0 0 300px rgb(0, 255, 132);
+
+      transform-origin: bottom right;
+      animation: rotateAnimate 1s ease-in-out infinite;
+    }
+
+    @keyframes rotateAnimate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      60% {
+        transform: rotate(90deg);
+      }
+
+      65% {
+        transform: rotate(85deg);
+      }
+
+      70% {
+        transform: rotate(90deg);
+      }
+
+      75% {
+        transform: rotate(87.5deg);
+      }
+
+      80%,
+      100% {
+        transform: rotate(90deg);
+      }
     }
 
     .Xtable {
@@ -175,44 +239,24 @@
     .popup .show {
       visibility: visible;
     }
-
-    .submit {
-      cursor: pointer;
-      width: 100px;
-      transition: .2s ease-in-out;
-    }
-
-    .submit:hover {
-      background: #999;
-      width: 140px;
-    }
-
-    #signup-btn {
-      cursor: pointer;
-    }
-
-    #draw {
-      cursor: pointer;
-      transition: .2s ease-in-out;
-      width: 100px;
-      border: none;
-      padding: 10px 20px;
-      font-size: 20px;
-    }
-
-    #draw:hover {
-      background: #999;
-      width: 140px;
-    }
+	
+	.columns{
+    display: grid;
+    grid-template-columns: 50% 50%;  
+}
   </style>
 </head>
 
 
 <body>
+
   <div class="system_name">
     <h2>IPhone STUDIO</h2>
   </div>
 
+
+<div class="columns">
+<div>
   <div class="login_page">
     <div id="container1">
 
@@ -221,18 +265,14 @@
         <h6>Please Login</h6>
 
         <form action="Admin.php">
-          <input type="text" id="username" name="username" placeholder="Username" pattern=".{3,}"
-            title="3 characters minimum" required>
+          <input type="text" id="username" name="username" placeholder="Username" required>
           <div class="tab"></div>
-          <input type="password" id="password" name="password" placeholder="Password"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z]).{8,}"
-            title="must contain at least eight characters, at least one number and both lower and uppercase letters and special characters."
-            minlength="8" maxlength="12" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
           <div class="tab"></div>
           <input type="submit" value="Login" class="submit" onclick="location.href='#'">
         </form>
 
-        <h5 onclick="show_hide()" id="signup-btn">Sign Up</h5>
+        <h5 onclick="show_hide()">Sign Up</h5>
 
       </div><!-- login end-->
     </div><!-- container1 end-->
@@ -246,16 +286,11 @@
         <h6>Please Sign Up</h6>
 
         <form action="Admin.php">
-          <input type="text" id="fullname" name="fullname" placeholder="Full Name" pattern=".{5,}"
-            title="5 characters minimum" required>
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
           <div class="tab"></div>
-          <input type="text" id="username2" name="username" placeholder="Username" pattern=".{3,}"
-            title="3 characters minimum" required>
+          <input type="text" id="username2" name="username" placeholder="Username" required>
           <div class="tab"></div>
-          <input type="password" id="password2" name="password" placeholder="Password"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[a-z]).{8,}"
-            title="must contain at least eight characters, at least one number and both lower and uppercase letters and special characters."
-            minlength="8" maxlength="12" required>
+          <input type="password" id="password2" name="password" placeholder="Password" required>
           <div class="tab"></div>
           <input type="password" id="comfirm_password" name="comfirm_password" placeholder="Repeat Password" required>
           <div class="tab"></div>
@@ -267,13 +302,18 @@
       </div><!-- signup end-->
     </div><!-- container2 end-->
   </div><!-- signup_page end-->
-
+</div>
+<div>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
   <div id="copyright">
     <h2>Welcome to IPhone STUDIO</h2><br>
     <!--break-->
     <h2> please choice which gift you want to draw</h2>
   </div>
-</body>
+
 
 
 <form action="">
@@ -302,14 +342,17 @@
     <tr>
       <td>
         <h2> please touch or click the draw button</h2>
-        <input type="submit" name="Iphone 13" value="Draw" id="draw">
+        <input type="submit" name="Iphone 13" value="Draw">
       </td>
     </tr>
   </center>
 </form>
+</div>
 
 <br>
 <br>
+</div>
+
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouoDCnI2G1lfYAruuxGdnUAgH6ZhEgpKNqg&usqp=CAU"
   alt="gifts" height="100" width="100"><br>
 <div class="popup" onclick="show()">
@@ -484,6 +527,8 @@
 
 </body>
 <script>
+
+
   function show() {
     var popup = document.getElementById("popup_text");
     popup.classList.toggle("show");
